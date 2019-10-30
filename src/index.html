@@ -4,17 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My app</title>
+    <title>Garden Project</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
-    <h1>Ambre's Garden</h1>
-    <img
-      src="https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1707&q=80"
-      alt="Autumn Garden"
-    />
+    <!--------NAV--------->
+    <header>
+      <h1>Ambre's Garden</h1>
+      <nav>
+        <ul>
+          <li><a href="#season">Seasons</a></li>
+          <li><a href="#vegetables">Végétables</a></li>
+          <li><a href="#">Garden History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="banner">
+        <h2>Autumn Vegetable Garden</h2>
+      </div>
+    </section>
+    <!-- Section scroll -->
+    <section class="high-bar">
+      <h3>Seasons</h3>
+      <div>-></div>
+    </section>
+    <section id="season" class="season-photo">
+      <div>
+        <img
+          class="autumn"
+          src="https://images.pexels.com/photos/1549629/pexels-photo-1549629.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt="Autumn's season"
+        />
+        <div>
+          <h4>
+            Autumn <br />
+            Treat or Trick?
+          </h4>
+        </div>
+      </div>
+      <div>
+        <img
+          class="winter"
+          src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Winter's season"
+        />
+        <div>
+          <h4>
+            Winter <br />
+            Is Coming
+          </h4>
+        </div>
+      </div>
+      <div>
+        <img
+          class="spring"
+          src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Spring's season"
+        />
+        <div>
+          <h4>
+            Spring <br />
+            Break!
+          </h4>
+        </div>
+      </div>
+      <div>
+        <img
+          class="summer"
+          src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Summer's season"
+        />
+        <div>
+          <h4>
+            Summer <br />
+            Here Comes The Sun
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <!--SHOPPING-->
+    <section id="vegetables" class="shopping-vegetables">
+      <div class="background-vegetables">
+        <h5>Vegetables</h5>
+      </div>
+      <div>
+        <img
+          class="avocado-grapefruit"
+          src="https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="Avocado & Grapefruit"
+        />Avocado & Grapefruit
+      </div>
+      <div>
+        <img
+          class="taboulet-jars"
+          src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="Taboulet Jars"
+        />Taboulet Jars
+      </div>
+      <div>
+        <img
+          class="lunch-box-cereals"
+          src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="Lunch Box Cereals"
+        />Lunch Box Cereals
+      </div>
+      <div>
+        <img
+          class="radish-salad"
+          src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="Radish Salad"
+        />Radish Salad
+      </div>
+    </section>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
