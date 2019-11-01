@@ -8,18 +8,25 @@ header {
 
 header h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 4em;
+  font-size: 5em;
   color: #0cb377;
+  margin: 20px;
+  font-weight: bold;
 }
 
 nav ul {
   display: flex;
   font-family: "Dancing Script", cursive;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 nav ul li {
-  margin: 10px;
+  margin: 30px;
+}
+
+.logo {
+  font-size: 2em;
+  padding: 20px;
 }
 
 .banner {
@@ -35,19 +42,20 @@ nav ul li {
 
 h2 {
   color: #ff6644;
-  font-size: -webkit-xxx-large;
+  font-size: 4em;
 }
 
 h3 {
   margin: 20px;
-  font-size: xx-large;
+
+  font-size: 3em;
   font-family: "Dancing Script", cursive;
   color: #b33a1e;
   background-color: #45ffbc;
 }
 
-.high-bar div {
-  font-size: xx-large;
+.high-bar i {
+  font-size: 3em;
   margin: 20px;
 }
 
@@ -75,25 +83,239 @@ h3 {
 
 h4 {
   font-family: "Dancing Script", cursive;
-  font-size: xx-large;
+  font-size: 2em;
   color: #ff6644;
+  display: flex;
+  justify-content: center;
 }
 
 .background-vegetables {
-  height: 60vh;
-  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/952483/pexels-photo-952483.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
 }
 
 h5 {
+  margin: 20px;
+  font-size: 3em;
   font-family: "Dancing Script", cursive;
-  font-size: xx-large;
-  color: #0cb377;
-  display: flex;
+  color: #b33a1e;
+  background: #45ffbc;
+  display: inline-block;
 }
 
-.shopping-vegetables {
+.background-vegetables > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.price-bar {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.background-vegetables .price {
+  font-size: 2em;
+  color: #0cb377;
+}
+.background-vegetables .achat {
+  font-size: 1.5em;
+}
+
+.background-vegetables > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 600px;
+  margin: 20px;
+  overflow: hidden;
+}
+.background-vegetables img {
   object-fit: cover;
+  width: 100%;
+  flex: auto;
+}
+
+.background-vegetables > div > div:hover img {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.history {
+  display: flex;
+  background-image: url("https://images.pexels.com/photos/1192034/pexels-photo-1192034.jpeg?auto=compress&cs=tinysrgb&dpr=4&w=500");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+}
+
+h6 {
+  color: #b33a1e;
+  font-size: 2em;
+}
+
+.box p {
+  font-size: 2em;
+}
+
+.read {
+  font-size: 2em;
+}
+
+.box {
+  justify-content: space-around;
+  margin: 50px;
+  padding: 50px;
+  width: 40em;
+  height: 40em;
+  background-color: #ff7c5e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newsletter {
+  height: 30em;
+  background: #0cb377;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newsletter p {
+  font-size: 2em;
+}
+
+.newsletter input {
+  font-size: 2em;
+}
+
+.social {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1180px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1180px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  nav ul {
+    font-size: 1.2em;
+  }
+  .logo {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+}
+@media (max-width: 867px) {
+  header h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 2.5em;
+  }
+  .price-bar {
+    width: 30%;
+    font-size: 0.8em;
+  }
+  .box p,
+  .box button {
+    font-size: 1.5em;
+  }
+  .newsletter {
+    font-size: 1em;
+  }
+  .social {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 796px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 2em;
+  }
+  .high-bar i {
+    font-size: 2em;
+  }
+  .price-bar {
+    width: 30%;
+    font-size: 0.7em;
+  }
+  .box p,
+  .box button {
+    font-size: 1.5em;
+  }
+  .box {
+    margin: 150px;
+    padding: 50px;
+  }
+  .newsletter {
+    font-size: 0.8em;
+  }
+  .social {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    font-size: 1em;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  h2 {
+    font-size: 2.5em;
+  }
+  .price-bar {
+    width: 40%;
+    font-size: 0.5em;
+  }
+  .box p,
+  .box .read {
+    font-size: 1em;
+  }
+  .box {
+    height: 20em;
+  }
+
+  .newsletter {
+    font-size: 0.8em;
+  }
 }

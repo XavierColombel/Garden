@@ -7,6 +7,10 @@
     <title>Garden Project</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b1b02b5240.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -17,7 +21,10 @@
         <ul>
           <li><a href="#season">Seasons</a></li>
           <li><a href="#vegetables">Végétables</a></li>
-          <li><a href="#">Garden History</a></li>
+          <li><a href="#garden-history">Garden History</a></li>
+          <div class="logo">
+            <i class="fas fa-shopping-basket"></i>
+          </div>
         </ul>
       </nav>
     </header>
@@ -29,10 +36,10 @@
     </section>
     <!-- Section scroll -->
     <section class="high-bar">
-      <h3>Seasons</h3>
-      <div>-></div>
+      <h3 id="season">Seasons</h3>
+      <i class="fas fa-arrow-right"></i>
     </section>
-    <section id="season" class="season-photo">
+    <section class="season-photo">
       <div>
         <img
           class="autumn"
@@ -88,37 +95,93 @@
     </section>
 
     <!--SHOPPING-->
-    <section id="vegetables" class="shopping-vegetables">
-      <div class="background-vegetables">
-        <h5>Vegetables</h5>
-      </div>
+    <section class="background-vegetables">
+      <h5 id="vegetables">Vegetables</h5>
       <div>
-        <img
-          class="avocado-grapefruit"
-          src="https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="Avocado & Grapefruit"
-        />Avocado & Grapefruit
+        <div>
+          <img
+            class="avocado-grapefruit"
+            src="https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Avocado & Grapefruit"
+          />
+          <div class="price-bar">
+            <h6>Grapefruit</h6>
+            <p class="price">15€</p>
+            <button class="achat">Panier</button>
+          </div>
+        </div>
+        <div>
+          <img
+            class="taboulet-jars"
+            src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Taboulet Jars"
+          />
+          <div class="price-bar">
+            <h6>Taboulet Jars</h6>
+            <p class="price">18€</p>
+            <button class="achat">Panier</button>
+          </div>
+        </div>
+        <div>
+          <img
+            class="lunch-box-cereals"
+            src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Lunch Box Cereals"
+          />
+          <div class="price-bar">
+            <h6>Lunch Box</h6>
+            <p class="price">10€</p>
+            <button class="achat">Panier</button>
+          </div>
+        </div>
+        <div>
+          <img
+            class="radish-salad"
+            src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Radish Salad"
+          />
+          <div class="price-bar">
+            <h6>Radish Salad</h6>
+            <p class="price">8€</p>
+            <button class="achat">Panier</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <img
-          class="taboulet-jars"
-          src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="Taboulet Jars"
-        />Taboulet Jars
+    </section>
+
+    <!--HISTORY-->
+
+    <section id="garden-history" class="history">
+      <div class="box">
+        <h5>Garden History</h5>
+        <p>
+          The organic vegetable garden is a vegetable garden that respects
+          nature as part of the sustainable development. <br />
+          It offers vegetables and tasty plants to enjoy without moderation.
+        </p>
+        <button class="read">Read More</button>
       </div>
+    </section>
+
+    <!--NEWSLETTER-->
+
+    <section class="newsletter">
+      <p>Sign up for our newsletter and stay informed</p>
+      <input type="email" value="you@email.com" />
+    </section>
+
+    <!--SOCIAL NETWORK-->
+
+    <section class="social">
+      <p>
+        Ambre's Garden 2019
+      </p>
+      <p>
+        Made at the Reacteur
+      </p>
       <div>
-        <img
-          class="lunch-box-cereals"
-          src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="Lunch Box Cereals"
-        />Lunch Box Cereals
-      </div>
-      <div>
-        <img
-          class="radish-salad"
-          src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="Radish Salad"
-        />Radish Salad
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-square"></i>
       </div>
     </section>
 
