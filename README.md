@@ -6,7 +6,7 @@ https://focused-cray-d9e9b2.netlify.com
 
 ## Preview
 
-![alt text](https://focused-cray-d9e9b2.netlify.com)
+![Screenshot](ScreenShot Ambre's Garden)
 
 ## Usage
 
