@@ -19,12 +19,25 @@
       <h1>Ambre's Garden</h1>
       <nav>
         <ul>
-          <li><a href="#season">Seasons</a></li>
+          <li><a href="#offer">Seasons</a></li>
           <li><a href="#vegetables">Végétables</a></li>
           <li><a href="#garden-history">Garden History</a></li>
-          <div class="logo">
-            <i class="fas fa-shopping-basket"></i>
-          </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#0CB377"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0"
+            />
+          </svg>
         </ul>
       </nav>
     </header>
@@ -36,14 +49,17 @@
     </section>
     <!-- Section scroll -->
     <section class="high-bar">
-      <h3 id="season">Seasons</h3>
-      <i class="fas fa-arrow-right"></i>
+      <p id="offer">Free shipping today only!</p>
+      <div class="menu ">
+        <h3 id="season">Seasons</h3>
+        <i class="fas fa-arrow-right"></i>
+      </div>
     </section>
     <section class="season-photo">
       <div>
         <img
           class="autumn"
-          src="https://images.pexels.com/photos/1549629/pexels-photo-1549629.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          src="/src/images/autumn.jpeg"
           alt="Autumn's season"
         />
         <div>
@@ -56,7 +72,7 @@
       <div>
         <img
           class="winter"
-          src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="/src/images/winter.jpeg"
           alt="Winter's season"
         />
         <div>
@@ -69,7 +85,7 @@
       <div>
         <img
           class="spring"
-          src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="/src/images/spring.jpeg"
           alt="Spring's season"
         />
         <div>
@@ -82,7 +98,7 @@
       <div>
         <img
           class="summer"
-          src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="/src/images/summer.jpeg"
           alt="Summer's season"
         />
         <div>
@@ -95,13 +111,18 @@
     </section>
 
     <!--SHOPPING-->
-    <section class="background-vegetables">
-      <h5 id="vegetables">Vegetables</h5>
+    <section class="background-vegetables d-f">
+      <span class="vegetables-bar d-f">
+        <h3 id="vegetables">Vegetables</h3>
+        <span class="vignette">
+          <p>100% seasonal fruit and vegetable</p>
+        </span>
+      </span>
       <div>
         <div>
           <img
             class="avocado-grapefruit"
-            src="https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="/src/images/grapefruit.jpeg"
             alt="Avocado & Grapefruit"
           />
           <div class="price-bar">
@@ -113,7 +134,7 @@
         <div>
           <img
             class="taboulet-jars"
-            src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="/src/images/taboulet.jpeg"
             alt="Taboulet Jars"
           />
           <div class="price-bar">
@@ -125,7 +146,7 @@
         <div>
           <img
             class="lunch-box-cereals"
-            src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="/src/images/lunch-box.jpeg"
             alt="Lunch Box Cereals"
           />
           <div class="price-bar">
@@ -137,7 +158,7 @@
         <div>
           <img
             class="radish-salad"
-            src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="/src/images/salad.jpeg"
             alt="Radish Salad"
           />
           <div class="price-bar">
@@ -147,13 +168,14 @@
           </div>
         </div>
       </div>
+      <button class="browser">Browser All</button>
     </section>
 
     <!--HISTORY-->
 
     <section id="garden-history" class="history">
       <div class="box">
-        <h5>Garden History</h5>
+        <h3>Garden History</h3>
         <p>
           The organic vegetable garden is a vegetable garden that respects
           nature as part of the sustainable development. <br />

@@ -1,4 +1,4 @@
-# parcel-postcss
+# Showcase site : Ambre's Garden
 
 ## Link
 
@@ -6,7 +6,7 @@ https://focused-cray-d9e9b2.netlify.com
 
 ## Preview
 
-![Screenshot](ScreenShot Ambre's Garden)
+![ScreenShot Ambre's Garden](https://user-images.githubusercontent.com/56254199/73280792-50fd7b00-41ef-11ea-9c0c-53b086c00dc8.png)
 
 ## Usage
 
